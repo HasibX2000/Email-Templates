@@ -1,0 +1,33 @@
+a{
+    color: tomato;
+    background: white;
+    text-decoration: none;
+    display: inline-block;
+
+    padding: 20px 20px;
+    font-size: 20px;
+    transition: .3s
+}
+a:hover{
+    color: #fff;
+    background: tomato
+}
+li{
+    list-style-type: none;
+}
+ul{
+    display: grid;
+    grid-gap:1rem;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media only screen and (max-width:992px) {
+    ul{
+        grid-template-columns:  auto auto;
+    }
+}
+@media only screen and (max-width:480px) {
+    ul{
+        grid-template-columns: auto;
+    }
+}
